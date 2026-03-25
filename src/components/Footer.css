@@ -1,0 +1,65 @@
+.footer-section {
+  padding: 4rem 0 2rem 0;
+  border-top: none; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+.footer-brand .logo {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.footer-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.scroll-top-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.scroll-top-btn:hover {
+  color: var(--text-primary);
+}

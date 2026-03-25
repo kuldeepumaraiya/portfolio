@@ -1,0 +1,64 @@
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  /* Hero flows into about usually without border in minimalism */
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+/* Redefine global layout spacing specifically for minimal hero */
+.hero-section .container {
+  padding-top: 5rem;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  transition: opacity 0.2s;
+}
+
+.hero-link:hover {
+  opacity: 0.6;
+}
+
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  /* Gives the perfect pill shape */
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-cta-btn:hover {
+  background-color: rgb(0, 130, 236);
+  /*transform: translateY(-2px);*/
+}

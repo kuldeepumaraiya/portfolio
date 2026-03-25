@@ -1,0 +1,95 @@
+.project-detail {
+  padding-top: 8rem;
+  min-height: 80vh;
+}
+
+.project-container {
+  max-width: 800px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+.project-detail-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-meta strong {
+  color: var(--text-primary);
+}
+
+/* Template styles for content inside the layout */
+.project-content {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.project-content p {
+  margin-bottom: 2rem;
+}
+
+.project-content h2,
+.project-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 3rem 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.project-content h3 {
+  font-size: 1.25rem;
+}
+
+.project-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Helper classes for images that users can easily apply */
+.project-image-full {
+  width: 100%;
+  border-radius: 8px;
+  margin: 2rem 0;
+  background-color: var(--border-light);
+  /* Placeholder bg */
+  display: block;
+}
+
+.project-image-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+  font-style: italic;
+}

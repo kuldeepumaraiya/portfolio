@@ -1,0 +1,94 @@
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.edu-item:first-child {
+  padding-top: 0;
+}
+
+.edu-item:last-child {
+  border-bottom: none;
+}
+
+.edu-logo-placeholder {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 8px;
+  background-color: var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+}
+
+.edu-logo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edu-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60px; /* match logo height */
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.edu-institution-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.edu-institution {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.edu-year {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 480px) {
+  .edu-institution-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

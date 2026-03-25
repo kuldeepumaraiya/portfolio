@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -17,10 +18,9 @@ const Hero = () => {
           href={import.meta.env.BASE_URL + 'Kuldeep_Umaraiya_Resume.pdf'}
           target="_blank"
           rel="noopener noreferrer"
-          className="hero-cta-btn"
-          style={{ textDecoration: 'none' }}
+          className="hero-text-link"
         >
-          Resume
+          <strong>Resume</strong> <ArrowUpRight size={18} strokeWidth={2.5} />
         </a>
       </div>
     </section>

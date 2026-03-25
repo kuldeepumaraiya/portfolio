@@ -1,4 +1,3 @@
-import { Download } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -15,12 +14,13 @@ const Hero = () => {
         </p>
 
         <a
-          href="/Kuldeep_Umaraiya_Resume.pdf"
-          download="Kuldeep_Umaraiya_Resume.pdf"
+          href={import.meta.env.BASE_URL + 'Kuldeep_Umaraiya_Resume.pdf'}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hero-cta-btn"
           style={{ textDecoration: 'none' }}
         >
-          <Download size={18} strokeWidth={2.5} /> Download Resume
+          Resume
         </a>
       </div>
     </section>

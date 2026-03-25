@@ -20,7 +20,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="hero-text-link"
         >
-          <strong>Resume</strong> <ArrowUpRight size={18} strokeWidth={2.5} />
+          <strong>Resuuuuuuuuuuuume</strong> <ArrowUpRight size={18} strokeWidth={2.5} />
         </a>
       </div>
     </section>

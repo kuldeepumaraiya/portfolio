@@ -8,6 +8,7 @@ const Experience = () => {
       company: 'Graphic Era',
       duration: '2025-Present',
       logoUrl: 'https://www.geuieee.com/images/geu_logo.png', // Add image path here, e.g., '/graphic-era-logo.png' 
+      description: 'Briefly describe your key responsibilities, achievements, and impact in this role.',
     },
     {
       id: 2,
@@ -15,6 +16,7 @@ const Experience = () => {
       company: 'MIT World Peace University',
       duration: '2024-2025',
       logoUrl: 'https://mitwpu.edu.in/uploads/notificationfile/logo.webp',
+      description: 'Briefly describe your key responsibilities, achievements, and impact in this role.',
     },
     {
       id: 3,
@@ -22,6 +24,7 @@ const Experience = () => {
       company: 'Upstox',
       duration: '2023-2024',
       logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi8hnj33Ch_HR092ORTi7GT7MloB1aBiZG3Q&s',
+      description: 'Briefly describe your key responsibilities, achievements, and impact in this role.',
     }
   ];
 
@@ -49,6 +52,9 @@ const Experience = () => {
                     <span className="exp-company">{exp.company}</span>
                     <span className="exp-duration">{exp.duration}</span>
                   </div>
+                  {exp.description && (
+                    <p className="exp-description">{exp.description}</p>
+                  )}
                 </div>
               </div>
             ))}

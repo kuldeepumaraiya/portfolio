@@ -87,6 +87,13 @@
   letter-spacing: 0.05em;
 }
 
+.exp-description {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 @media (max-width: 480px) {
   .exp-company-row {
     flex-direction: column;

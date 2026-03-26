@@ -6,12 +6,10 @@ const Hero = () => {
     <section id="hero" className="hero-section">
       <div className="container">
         <h1 className="hero-title">
-          Designing systems for humans.
-          Researching the cognitive load of interfaces.
+          Designing human-centered experiences and shaping future designers.
         </h1>
         <p className="hero-description">
-          Assistant Professor & UX Designer.<br />
-          Previously designing at Upstox.
+          Assistant Professor and UX Designer creating intuitive, research-driven digital experiences, with a focus on design education and AI.
         </p>
 
         <a

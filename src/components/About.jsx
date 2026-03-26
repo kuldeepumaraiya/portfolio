@@ -10,14 +10,16 @@ const About = () => {
           </div>
           <div className="about-text">
             <p>
-              My journey began with a deep curiosity about how humans interact with technology. 
-              I translated that curiosity into practice as a UX Designer at <strong>Upstox</strong>, 
-              crafting experiences for millions of users.
+              I am an Assistant Professor and UX Designer with a strong focus on creating intuitive, research-driven digital experiences. My work lies at the intersection of interaction design, user research, and design education.
             </p>
             <p>
-              Today, I merge industry practice with theoretical research. As an Assistant Professor 
-              and design researcher, my goal is to teach the next generation of designers 
-              while continuing to push the boundaries of Human-Computer Interaction.
+              With a background from IIT Bombay and experience in both academic and practical design environments, I aim to bridge the gap between theory and real-world application. I actively engage in teaching, curriculum development, and mentoring students to become thoughtful, user-centered designers.
+            </p>
+            <p>
+              My interests include interaction design, emerging technologies, and the evolving role of UX in an AI-driven world. I am particularly inclined towards exploring how design thinking can shape learning experiences and foster problem-solving from an early stage.
+            </p>
+            <p>
+              I believe good design is not just about usability, but about creating meaningful and impactful human experiences.
             </p>
           </div>
         </div>

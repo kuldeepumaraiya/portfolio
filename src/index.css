@@ -18,7 +18,7 @@
   --space-xl: 5rem;
 
   /* Typography */
-  --font-primary: 'Inter', sans-serif;
+  --font-primary: 'Helvetica Neue', 'Inter', sans-serif;
   --font-display: 'Roboto Mono', monospace;
   --font-alt: 'Syne', sans-serif;
 }

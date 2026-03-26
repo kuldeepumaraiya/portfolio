@@ -7,7 +7,7 @@ const Experience = () => {
     {
       id: 1,
       role: 'Assistant Professor',
-      company: 'Graphic Era',
+      company: 'Graphic Era, Dehradun',
       duration: '2025-Present',
       logoUrl: 'https://www.geuieee.com/images/geu_logo.png',
       description: `
@@ -22,7 +22,7 @@ const Experience = () => {
     {
       id: 2,
       role: 'Assistant Professor',
-      company: 'MIT World Peace University',
+      company: 'MIT World Peace University, Pune',
       duration: '2024-2025',
       logoUrl: 'https://mitwpu.edu.in/uploads/notificationfile/logo.webp',
       description: `
@@ -37,7 +37,7 @@ const Experience = () => {
     {
       id: 3,
       role: 'UX Designer',
-      company: 'Upstox',
+      company: 'Upstox, Bengaluru',
       duration: '2023-2024',
       logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi8hnj33Ch_HR092ORTi7GT7MloB1aBiZG3Q&s',
       description: 'Briefly describe your key responsibilities, achievements, and impact in this role.',
@@ -69,15 +69,15 @@ const Experience = () => {
                   )}
                 </div>
                 <div className="exp-details">
-                  <div 
-                    className="exp-header-clickable" 
+                  <div
+                    className="exp-header-clickable"
                     onClick={() => toggleDrawer(exp.id)}
                   >
                     <div className="exp-role-row">
                       <h3 className="exp-role">{exp.role}</h3>
-                      <ChevronDown 
-                        size={18} 
-                        className={`exp-chevron ${openExpId === exp.id ? 'open' : ''}`} 
+                      <ChevronDown
+                        size={18}
+                        className={`exp-chevron ${openExpId === exp.id ? 'open' : ''}`}
                       />
                     </div>
                     <div className="exp-company-row">
@@ -85,7 +85,7 @@ const Experience = () => {
                       <span className="exp-duration">{exp.duration}</span>
                     </div>
                   </div>
-                  
+
                   {exp.description && (
                     <div className={`exp-description-drawer ${openExpId === exp.id ? 'open' : ''}`}>
                       <div className="exp-drawer-inner">

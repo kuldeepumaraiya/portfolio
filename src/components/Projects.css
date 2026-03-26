@@ -1,42 +1,104 @@
-.projects-list {
-  display: flex;
-  flex-direction: column;
+.project-group {
+  margin-bottom: 4rem;
 }
 
-.project-list-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border-light);
-  transition: opacity 0.2s;
+.project-group:last-child {
+  margin-bottom: 0;
 }
 
-.project-list-item:hover {
-  opacity: 0.9;
-  color: rgb(0, 130, 236);
+.project-group-header {
+  background-color: var(--bg-secondary);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-light);
 }
 
-.project-list-item:last-child {
-  border-bottom: none;
+.project-group-header h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
-.project-title {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
-.project-category {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
-  .project-list-item {
-    flex-direction: column;
-    gap: 0.5rem;
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.project-card:hover .project-title {
+  color: rgb(0, 130, 236);
+}
+
+.project-image-wrapper {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: var(--bg-secondary);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05); /* Smooth zoom effect */
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+  margin: 0;
+}
+
+.project-year {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }

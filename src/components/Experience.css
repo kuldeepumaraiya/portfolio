@@ -63,10 +63,44 @@
   min-height: 60px;
 }
 
+.exp-header-clickable {
+  cursor: pointer;
+  /* slight negative margin and padding to make hit area larger without affecting layout */
+  margin: -0.5rem -0.5rem -0.25rem -0.5rem;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.exp-header-clickable:hover {
+  background-color: var(--bg-secondary);
+}
+
+.exp-header-clickable:hover .exp-role {
+  color: rgb(0, 130, 236);
+}
+
+.exp-role-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.exp-chevron {
+  color: var(--text-secondary);
+  transition: transform 0.3s ease;
+}
+
+.exp-chevron.open {
+  transform: rotate(180deg);
+}
+
 .exp-role {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.25rem;
+  transition: color 0.2s;
 }
 
 .exp-company-row {
@@ -87,11 +121,38 @@
   letter-spacing: 0.05em;
 }
 
-.exp-description {
+.exp-description,
+.exp-description-list {
   margin-top: 0.75rem;
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.exp-description-list {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.exp-description-list li {
+  margin-bottom: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.exp-description-drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exp-description-drawer.open {
+  grid-template-rows: 1fr;
+}
+
+.exp-drawer-inner {
+  overflow: hidden;
+  /* min-height 0 is essential for the grid transition technique */
+  min-height: 0; 
 }
 
 @media (max-width: 480px) {

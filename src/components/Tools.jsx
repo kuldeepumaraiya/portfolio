@@ -5,7 +5,7 @@ const Tools = () => {
     {
       id: 1,
       category: 'Design & UI',
-      tools: ['Figma', 'Sketch', 'Adobe Illustrator', 'Adobe Photoshop'],
+      tools: ['Figma', 'Sketch', 'Adobe CC Suite'],
     },
     {
       id: 2,
@@ -19,8 +19,8 @@ const Tools = () => {
     },
     {
       id: 4,
-      category: 'Development / Tech',
-      tools: ['HTML & CSS', 'JavaScript', 'React', 'Python (Data Analysis)'],
+      category: 'Development (AI-Assisted)',
+      tools: ['HTML & CSS', 'JavaScript', 'React', 'Python (Basics)'],
     }
   ];
 
@@ -31,7 +31,7 @@ const Tools = () => {
           <div>
             <h2 className="section-title">Tools</h2>
           </div>
-          
+
           <div className="tools-list">
             {toolCategories.map((categoryGroup) => (
               <div key={categoryGroup.id} className="tools-category">

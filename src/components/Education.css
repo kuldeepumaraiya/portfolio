@@ -21,7 +21,8 @@
   align-items: flex-start;
   gap: 1.5rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: none;
+  background-color: transparent;
 }
 
 .edu-item:first-child {
@@ -37,7 +38,7 @@
   height: 60px;
   min-width: 60px;
   border-radius: 8px;
-  background-color: var(--border-light);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;

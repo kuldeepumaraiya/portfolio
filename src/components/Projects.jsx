@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2 className="section-title">Selected Projects</h2>
-        
+        <h2 className="section-title">Projects</h2>
+
         <div className="projects-list">
           {projectsList.map((project) => (
             <Link to={`/project/${project.id}`} key={project.id} className="project-list-item">

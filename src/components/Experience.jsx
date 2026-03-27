@@ -22,7 +22,7 @@ const Experience = () => {
     {
       id: 2,
       role: 'Assistant Professor',
-      company: 'MIT World Peace University, Pune',
+      company: 'MIT WPU, Pune',
       duration: '2024-2025',
       logoUrl: 'https://mitwpu.edu.in/uploads/notificationfile/logo.webp',
       description: `

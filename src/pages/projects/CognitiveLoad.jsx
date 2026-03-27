@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import ProjectImage from '../../components/ProjectImage';
 
 const CognitiveLoad = () => {
   return (
@@ -12,14 +13,11 @@ const CognitiveLoad = () => {
         influence the cognitive load of users digesting financial data.
       </p>
       
-      {/* Example Image Placeholder */}
-      <div 
-        className="project-image-full" 
-        style={{ height: '350px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-      >
-        <span>[Insert Eye-Tracking Heatmap Image Here]</span>
-      </div>
-      <p className="project-image-caption">Fig 1. Eye-tracking heatmap on a high-density dashboard.</p>
+      {/* 📸 HOW TO ADD A SINGLE IMAGE */}
+      <ProjectImage 
+        src="images/projects/cognitive-load.png" 
+        caption="Fig 1. Eye-tracking heatmap on a high-density dashboard." 
+      />
 
       <h2>Methodology</h2>
       <p>

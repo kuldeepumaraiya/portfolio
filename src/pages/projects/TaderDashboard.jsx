@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import ProjectImage from '../../components/ProjectImage';
 
 const TraderDashboard = () => {
   return (
@@ -12,13 +13,11 @@ const TraderDashboard = () => {
         complex data streams for novice traders while retaining powerful features for experts.
       </p>
 
-      {/* Example of how to add a full-width image placeholder */}
-      <img
-        src="/assets/dashboard.jpg"
-        alt="The finalized dark-mode dashboard interface"
-        className="project-image-full"
+      {/* 📸 HOW TO ADD A SINGLE IMAGE */}
+      <ProjectImage 
+        src="images/projects/tader-dashboard.png" 
+        caption="Fig 1. The finalized dark-mode dashboard interface." 
       />
-      <p className="project-image-caption">Fig 1. The finalized dark-mode dashboard interface.</p>
 
       <h2>Process & Findings</h2>
       <p>
@@ -33,13 +32,11 @@ const TraderDashboard = () => {
         <li>Progressive disclosure patterns to hide complex configurations until needed.</li>
       </ul>
 
-      {/* Example of another image */}
-      <img
-        src="/assets/wireframe.jpg"
-        alt="Iterative wireframing process"
-        className="project-image-full"
+      {/* 📸 ANOTHER SINGLE IMAGE */}
+      <ProjectImage 
+        src="images/projects/fintech-onboarding.png" 
+        caption="Fig 2. Iterative wireframing process." 
       />
-      <p className="project-image-caption">Fig 2. Iterative wireframing process.</p>
 
     </ProjectLayout>
   );

@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import ProjectImage from '../../components/ProjectImage';
 
 const FintechOnboarding = () => {
   return (
@@ -12,14 +13,11 @@ const FintechOnboarding = () => {
         drop-off rate during complex account creation steps.
       </p>
       
-      {/* Example Image Placeholder */}
-      <div 
-        className="project-image-full" 
-        style={{ height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-      >
-        <span>[Insert Before/After User Flow Diagram Here]</span>
-      </div>
-      <p className="project-image-caption">Fig 1. Monolithic form vs Conversational flow.</p>
+      {/* 📸 HOW TO ADD A SINGLE IMAGE */}
+      <ProjectImage 
+        src="images/projects/fintech-onboarding.png" 
+        caption="Fig 1. Monolithic form vs Conversational flow." 
+      />
 
       <h2>The Challenge & Solution</h2>
       <p>

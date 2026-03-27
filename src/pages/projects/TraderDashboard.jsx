@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import ProjectImage from '../../components/ProjectImage';
 
 const TraderDashboard = () => {
   return (
@@ -8,23 +9,20 @@ const TraderDashboard = () => {
       timeline="6 Months"
     >
       <p>
-        A complete overhaul of the trading analytics dashboard at Upstox. The goal was to simplify 
+        A complete overhaul of the trading analytics dashboard at Upstox. The goal was to simplify
         complex data streams for novice traders while retaining powerful features for experts.
       </p>
 
-      {/* Example of how to add a full-width image placeholder */}
-      <div 
-        className="project-image-full" 
-        style={{ height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-      >
-        <span>[Insert Final Dashboard Image Here]</span>
-      </div>
-      <p className="project-image-caption">Fig 1. The finalized dark-mode dashboard interface.</p>
+      {/* 📸 HOW TO ADD A SINGLE IMAGE */}
+      <ProjectImage
+        src="images/projects/trader-dashboard.png"
+        caption="Fig 1. The finalized dark-mode dashboard interface."
+      />
 
       <h2>Process & Findings</h2>
       <p>
-        We conducted extensive qualitative user research, observing over 50 power users trade in live markets. 
-        We discovered that cognitive load was extremely high due to scattered information. 
+        We conducted extensive qualitative user research, observing over 50 power users trade in live markets.
+        We discovered that cognitive load was extremely high due to scattered information.
       </p>
 
       <h3>Solution</h3>
@@ -34,14 +32,14 @@ const TraderDashboard = () => {
         <li>Progressive disclosure patterns to hide complex configurations until needed.</li>
       </ul>
 
-      {/* Example of another image */}
-      <div 
-        className="project-image-full" 
-        style={{ height: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-      >
-        <span>[Insert Wireframes Image Here]</span>
-      </div>
-      <p className="project-image-caption">Fig 2. Iterative wireframing process.</p>
+      {/* 📸 HOW TO ADD A GRID OF MULTIPLE IMAGES */}
+      <ProjectImage
+        grid={[
+          { src: "images/projects/tader-dashboard.png", caption: "Early sketches and wireframes." },
+          { src: "images/projects/cognitive-load.png", caption: "Cognitive load heatmap analysis." }
+        ]}
+        caption="Fig 2. Exploring early iterations and research heatmaps."
+      />
 
     </ProjectLayout>
   );

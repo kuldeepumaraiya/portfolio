@@ -1,0 +1,59 @@
+/* Base styles for images within the project pages */
+.project-image-styled {
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--border-light); /* Fallback placeholder */
+  display: block;
+  object-fit: cover;
+}
+
+/* Margin handling for single images */
+.project-single-image {
+  margin: 3rem 0;
+}
+
+.project-single-image .project-image-styled {
+  margin-bottom: 1.5rem;
+}
+
+/* Base caption stylings */
+.project-image-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Grid Layout specific styles */
+.project-image-grid-container {
+  margin: 3rem 0;
+}
+
+.project-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-grid-item .project-image-styled {
+  margin-bottom: 1rem;
+  height: 100%; /* Ensures they stretch nicely if grid matches */
+}
+
+.project-image-caption-grid {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.global-caption {
+  margin-top: 2rem;
+}

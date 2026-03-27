@@ -25,7 +25,11 @@ const Projects = () => {
               {projects.map((project) => (
                 <Link to={`/project/${project.id}`} key={project.id} className="project-card">
                   <div className="project-image-wrapper">
-                    <img src={project.image} alt={project.title} className="project-image" />
+                    <img 
+                      src={`${import.meta.env.BASE_URL}${project.image}`} 
+                      alt={project.title} 
+                      className="project-image" 
+                    />
                   </div>
                   <div className="project-info">
                     <div className="project-title-row">

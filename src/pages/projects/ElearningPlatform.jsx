@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import ProjectImage from '../../components/ProjectImage';
 
 const ElearningPlatform = () => {
   return (
@@ -12,14 +13,11 @@ const ElearningPlatform = () => {
         learning platform specifically optimized for visually impaired students.
       </p>
       
-      {/* Example Image Placeholder */}
-      <div 
-        className="project-image-full" 
-        style={{ height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-      >
-        <span>[Insert Final Prototype Image Here]</span>
-      </div>
-      <p className="project-image-caption">Fig 1. High-contrast interface structure.</p>
+      {/* 📸 HOW TO ADD A SINGLE IMAGE */}
+      <ProjectImage 
+        src="images/projects/elearning-platform.png" 
+        caption="Fig 1. High-contrast interface structure." 
+      />
 
       <h2>Process</h2>
       <p>

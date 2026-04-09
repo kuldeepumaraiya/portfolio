@@ -1,0 +1,24 @@
+.about-page {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.about-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}

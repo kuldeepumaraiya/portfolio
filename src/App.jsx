@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
 import { projectsList } from './data/projectsList';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <main style={{ minHeight: '80vh', paddingBottom: '4rem' }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
           
           {/* Dynamically generate routes covering all projects imported in the list */}
           {projectsList.map((project) => (
